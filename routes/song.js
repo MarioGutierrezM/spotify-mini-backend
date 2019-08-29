@@ -15,7 +15,7 @@ const { getSongList, saveSong, getSong, updateSong, deleteSong, uploadFile, getS
 // GET
 api.get('/song-list/:album?', ensureAuth, getSongList);
 api.get('/song/:id', ensureAuth, getSong);
-api.get('/get-file-song/:songFile', ensureAuth, getSongFile);
+api.get('/get-file-song/:songFile', getSongFile);
 
 // POST 
 api.post('/song', ensureAuth, saveSong);

@@ -15,7 +15,7 @@ const { getAlbumList, saveAlbum, getAlbum, updateAlbum, deleteAlbum, uploadImage
 // GET
 api.get('/album-list/:page?/:artist?', ensureAuth, getAlbumList);
 api.get('/album/:id', ensureAuth, getAlbum);
-api.get('/get-image-album/:imageFile', ensureAuth, getImageFile);
+api.get('/get-image-album/:imageFile', getImageFile);
 
 // POST 
 api.post('/album', ensureAuth, saveAlbum);
